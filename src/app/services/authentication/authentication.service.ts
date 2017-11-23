@@ -7,7 +7,9 @@ import 'rxjs/add/observable/throw'
 @Injectable()
 export class AuthenticationService {
    signUpURL='https://192.168.99.101:3011/signup';
-   loginURL='https://192.168.99.101:3011/login'
+   loginURL='https://192.168.99.101:3011/login';
+  captchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
+  secretKey = '6Lew-TkUAAAAACYxWMgfG4fdyxHoLY7qVH_WLnUN';
   constructor(private http: Http) { }
 
     login(username: string, password: string) {
