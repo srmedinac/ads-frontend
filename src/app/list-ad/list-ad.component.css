@@ -1,0 +1,79 @@
+.bbody{
+  background-color: rgb(19, 136, 232);
+  font-family:Verdana;
+}
+.ddescription{
+  float: top;
+  margin-left: 10%;
+  width:40%;
+}
+.detAd{
+  position: fixed;
+  float: top;
+  right: 5%;
+  width:40%;
+  top: 241px;
+}
+.description{
+  margin-bottom: 10px;
+  background-color: #add65c;
+  padding: 5px;
+}
+image{
+  float: right;
+  left: 20px;
+  width:60%;
+}
+.nameAd{
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.visits{
+  font-size: 12px;
+}
+.expiration{
+  font-size: 13px;
+}
+.search{
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  height: 50px;
+  width: 80px;
+  background-color: #336600;
+  color: #FFFFFF;
+  border-color: #264d00;
+}
+
+#adHead1{
+  width: 25%;
+  border: 0px solid white ;
+  text-transform: capitalize;
+}
+#adHead2{
+  width: 60%;
+  border: 0px solid white ;    
+  text-transform: capitalize;
+}
+#adHead3{
+  width: 15%;
+  border: 0px solid white ;
+}
+#hidden{
+  height: 0px;
+  padding: 0;
+}
+#imaginary_container{
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}

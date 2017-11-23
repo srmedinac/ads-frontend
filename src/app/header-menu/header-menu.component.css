@@ -1,0 +1,30 @@
+.HeaderMenu{
+  background-image: url(../../assets/images/header.jpg);
+  background-size: contain;
+  color: #FFFFFF;
+}
+.LogIn{
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-family:Verdana;
+}
+
+.logindata{
+  font-size: 12px;
+  font-family:Verdana;    
+  margin-top: 10;
+  margin-bottom: 0;
+}
+
+#headerIMG{
+    margin-top: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: 15px;
+}
+
+#headerName{
+    margin: 0;
+    height: 90px;
+}

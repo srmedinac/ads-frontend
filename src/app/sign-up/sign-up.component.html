@@ -1,0 +1,17 @@
+<div class="col-sm-5">
+<h4 class="font-alt">Register</h4>
+<hr class="divider-w mb-10">
+<form class="form">
+  <input [(ngModel)]="name" class="form-control" type="text" name="name" placeholder="Enter your name" pattern="[a-zA-Z ]*">
+  <input [(ngModel)]="username"  class="form-control" type="text" name="username" placeholder="Choose your Username" pattern="[a-zA-Z ]*" >
+  <input [(ngModel)]="email"  class="form-control" type="email" name="email" placeholder="What is your email?" email >
+
+  <input [(ngModel)]="birth"  class="form-control" type="date" name="birht"  >
+
+  <input [(ngModel)]="password"  class="form-control" type="password" name="password" placeholder="Choose a secure password" pattern="[a-zA-Z ]*">
+
+  <button class="btn btn-block btn-round btn-b" type="submit" routerLink="/Home" (click)="signup()"> Create Account</button>
+
+</form>
+</div>
+                

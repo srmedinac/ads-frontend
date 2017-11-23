@@ -1,0 +1,12 @@
+.description{
+  align: center;
+}
+
+.dContainer{
+    height: 500px;
+    width: 100%;
+    background-image: url(../../assets/images/Launch.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-left: 80px;
+}

@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ad-front-app:
+    container_name: ad-front-app
+    build: .
+    #image: dglyp/arquitecturadesoftware-front:cripto
+    command: "npm start -- --host=0.0.0.0 --disable-host-check"
+    ports:
+      - 4200:4200
+      - 49152:49152

@@ -1,0 +1,21 @@
+.bbody{
+  font-family:Verdana;
+  overflow:hidden;    
+}
+.ddescription{
+  float: left;
+  left: 20px;
+  width: 60%;
+  height: 100%;
+  margin-top: 20px;
+}
+.signIn{
+  float: right;
+  right: 20px;
+  width:50%;
+  font-size: 30px;
+}
+#gif{
+    background-image: url(../../assets/images/comet-home.gif);
+    background-size: cover;
+}

@@ -1,0 +1,22 @@
+.bbody{
+  background-color: #FFFFFF8E23;
+  font-family:Verdana;
+}
+.ddescription{
+  float: top;
+  padding-left: 20%;
+  width:40%;
+
+}
+.description{
+  align: center;
+  padding: 25px;
+}
+image{
+  float: right;
+  left: 20px;
+  width:60%;
+}
+p{
+  border: solid;
+}

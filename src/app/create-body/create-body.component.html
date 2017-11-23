@@ -1,0 +1,55 @@
+
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+
+        <div class="main">
+        <section class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h4 class="font-alt mb-0">Create an Ad</h4>
+                <hr class="divider-w mt-10 mb-20">
+                <form class="form" role="form">
+                  <div class="form-group">
+                    <input class="form-control input-lg" [(ngModel)]="ad_name" type="text" name="ad_name" placeholder="Ad title"/>
+                  </div>
+                    
+                  <textarea class="form-control" rows="7" [(ngModel)]="terms" name="terms" placeholder="Terms and conditions"></textarea>
+                    <br>
+                  <div class="form-group">
+                    <input class="form-control" [(ngModel)]="expiration" type="date" name="expiration" placeholder="Expiration date"/>
+                  </div>
+                    <div class="form-group">
+                    <input class="form-control" [(ngModel)]="age" type="number" name="age" placeholder="E.g. 15" min=0 max=100/>
+                  </div>
+                    <div class="form-group">
+                    <input class="form-control" [(ngModel)]="price" type="text" name="price" placeholder="$$$$" min=0/>
+                  </div>
+                    
+                  <textarea class="form-control" rows="7" [(ngModel)]="desc" name="desc" placeholder="Description"></textarea>
+                    <br>
+                     <div class="form-group">
+                    <input class="form-control" [(ngModel)]="content" type="text" name="content" placeholder="Content"/>
+                  </div>
+                     <div class="form-group">
+                    <input class="form-control" [(ngModel)]="category" type="text" name="category" placeholder="E.g. Gaming"/>
+                  </div>
+                <div class="form-group">
+                  <button class="btn btn-round btn-g" type="submit" (click)="agregarCat()">Apply</button>
+                        <td *ngFor="let c of cates">
+                          {{c}} &nbsp;
+                        </td>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-block btn-round btn-d pull-right" (click)="createAd()" type="submit" routerLink="/User" >>CREATE AD</button>
+                </div>
+                 
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+  </body>

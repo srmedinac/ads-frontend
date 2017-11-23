@@ -1,0 +1,32 @@
+.HeaderMenu{
+  background-image: url(../../assets/images/header.jpg);
+  background-size: contain;
+  font-size: 50px;
+  font-family:Lucida Console;
+  color: #FFFFFF;
+  padding: 20px;
+}
+.LogOut{
+  position: absolute;
+  top: 42px;
+  right: 70px;
+  font-family:Verdana;
+}
+#logOut{
+    background-color: rgba(62, 61, 61, 0.56);
+    width: auto;
+    height: auto;
+}
+.Return{
+  position: absolute;
+  top: 10px;
+  padding-left: 50%;
+  font-family:Verdana;
+}
+button{
+  height: 22px;
+  width: 80px;
+  background-color: #212121;
+  color: #FFFFFF;
+  border-color: #212121;
+}

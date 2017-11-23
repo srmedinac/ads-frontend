@@ -1,0 +1,95 @@
+<app-header-default></app-header-default>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="main">
+        <section class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h1 class="module-title font-alt">Edit an Ad</h1>
+              </div>
+            </div>
+            <hr class="divider-w pt-20">
+            <div class="row">
+              <main>
+                <section class="well">
+                  <div class="container">
+                    <table class="table" *ngFor="let xx of Adss; let i = index">
+                      <tbody>
+                        <tr data-toggle="collapse" class="clickable" [attr.data-target]="'#accordion_' + xx.id" (click)="editAd(xx.id,i)">
+                          <td id="adHead1"  >{{xx.name}}</td>
+                          <td id="adHead2"  >{{xx.expiration_date | date: format : longDate}}</td>
+                          <td id="adHead3"  >{{xx.hits}}</td>
+                          <td id="adHead4"  >
+                            <button id="delbun" class="btn btn-block btn-round btn-d pull-right" (click)="Delid(xx.id)" type="submit" routerLink="/User" >
+                              DELETE
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td id="hidden" colspan="3">
+                            <div [attr.id]="'accordion_' + xx.id" class="collapse">
+                              <div class="row" >
+                                <!-- Wide card with share menu button -->
+                                <div class="detAd" *ngIf="aDet != undefined">
+                                  <div>
+                                    <form class="form" role="form">
+                                      <div class="form-group">
+                                        <input class="form-control input-lg" [(ngModel)]="ad_name" name="name" type='text' value={{adI.name}}/>
+                                      </div>
+
+                                      <textarea class="form-control" rows="7" [(ngModel)]="terms" name="terms"  value={{aDet.terms}}>
+                                      </textarea>
+                                      <br>
+                                      <div class="form-group">
+                                        <input class="form-control" [(ngModel)]="expiration" name="expiration"  type='date' value={{aDet.expiration_date}} placeholder="Expiration date"/>
+                                      </div>
+                                      <div class="form-group">
+                                        <input class="form-control" [(ngModel)]="age" name="age"  type='number' value={{aDet.age}} placeholder="E.g. 15"/>
+                                      </div>
+                                      <div class="form-group">
+                                        <input class="form-control" [(ngModel)]="price" name="price" type='text' value={{aDet.price}} placeholder="$$$$" min=0/>
+                                      </div>
+
+                                      <textarea class="form-control" rows="7" [(ngModel)]="desc" name="desc" placeholder="Description"value={{aDet.description}}></textarea>
+                                      <br>
+                                      <div class="form-group">
+                                        <input class="form-control" [(ngModel)]="content" name="content"  type='text' value={{aDet.content}} placeholder="Content"/>
+                                      </div>
+                                      <div class="form-group">
+                                        <button class="btn btn-block btn-round btn-d pull-right" (click)="saveAd()" type="submit" routerLink="/User" >>SAVE CHANGES</button>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              </main>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<app-footer></app-footer>

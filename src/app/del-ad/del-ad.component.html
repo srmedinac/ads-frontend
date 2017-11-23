@@ -1,0 +1,61 @@
+<app-header-default></app-header-default>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+
+      
+      
+      
+      
+      
+    <main>
+      <div class="main">
+        <section class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h1 class="module-title font-alt">Delete an Ad</h1>
+              </div>
+            </div>
+            <hr class="divider-w pt-20">
+            <div class="row">
+    <main>
+
+<section class="well">
+  <div class="container">
+                 
+      
+<table class="table" *ngFor="let xx of Adss; let i = index">
+<tbody>
+    <tr data-toggle="collapse" class="clickable" [attr.data-target]="'#accordion_' + xx.id" >
+        <td id="adHead1"  >{{xx.name}}</td>
+        <td id="adHead2"  >{{xx.expiration_date | date: format : longDate}}</td>
+        <td id="adHead3"  ><button class="btn btn-block btn-round btn-d pull-right" (click)="Delid(xx.id)" type="submit" routerLink="/User" >>DELETE</button></td>
+    </tr>
+    <tr>
+    </tr>
+</tbody>
+</table>
+
+
+            </div>
+        </section>
+    </main>
+
+                
+                
+             
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+
+
+
+
+
+
+
+
+
+<app-footer></app-footer>

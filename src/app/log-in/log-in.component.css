@@ -1,0 +1,15 @@
+input{
+  height: 20px;
+  background-color: rgb(255, 253, 227);
+}
+.button{
+  border-radius: 0px;
+  height: 26px;
+  width: 80px;
+  background-color: #212121;
+  color: #FFFFFF;
+  border-color: #212121;
+}
+.log_in{
+    margin-right: 50px;
+}

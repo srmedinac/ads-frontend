@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.demo-card-wide.mdl-card {
+  width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+table { table-layout: fixed; }

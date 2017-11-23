@@ -1,0 +1,108 @@
+<app-header-default></app-header-default>
+
+
+
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+        <div class="main">
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <h1 class="module-title font-alt">{{user_name}}</h1>
+                        </div>
+                    </div>
+
+                    <div class="menuFilter">
+                        <form>
+                            <input type="search" #s name="googlesearch" class="form-control"  placeholder="Category">
+                            <input class="search" type="submit" (click)="searAd(s.value)">
+                        </form>
+                    </div>
+
+                    <div class="menuFilter">
+                        <form>
+                            <input type="search" #n name="googlesearch" class="form-control"  placeholder="Name">
+                            <input class="search" type="submit" (click)="searName(n.value)">
+                        </form>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-around">
+                            <div class="col-sm-6 ">
+                                <div id="imaginary_container"> 
+                                    <div class="input-group stylish-input-group">
+                                        <input type="text" class="form-control"  placeholder="Search" >
+                                        <span class="input-group-addon">
+                                            <button type="submit">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </button>  
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <div id="imaginary_container"> 
+                                    <div class="input-group stylish-input-group">
+                                        <input type="text" class="form-control"  placeholder="Search" >
+                                        <span class="input-group-addon">
+                                            <button type="submit">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </button>  
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divider-w pt-20">
+                    <div class="row">
+                        <main>
+                            <section class="well">
+                                <div class="container">
+                                    <table class="table" *ngFor="let xx of Adss; let i = index">
+                                        <tbody>
+                                            <tr data-toggle="collapse" class="clickable" [attr.data-target]="'#accordion_' + xx.id" (click)="showAd(xx.id,i)">
+                                                <td id="adHead1"  >{{xx.name}}</td>
+                                                <td id="adHead2"  >{{xx.expiration_date | date: format : longDate}}</td>
+                                                <td id="adHead3"  >{{xx.hits}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="hidden" colspan="3">
+                                                    <div [attr.id]="'accordion_' + xx.id" class="collapse">
+                                                        <div class="row" > 
+                                                            <!-- Wide card with share menu button -->
+                                                            <div class="demo-card-wide mdl-card mdl-shadow--2dp" *ngIf="aDet != undefined">
+                                                                <div class="mdl-card__supporting-text">
+                                                                    <h2 class="mdl-card__title-text">{{Adss[adI].name}}</h2>
+                                                                    <p class="add" >{{'Terms and conditions: '+aDet.terms}}</p>
+                                                                    <p class="add" >{{'Description: '+aDet.description}}</p>
+                                                                    <p class="add">{{aDet.content}}</p>
+                                                                    <p class="add">{{'Minimum age: '+aDet.age}}</p>
+                                                                    <p class="add">{{'Price: $'+aDet.price}}</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chart">
+                                                                <canvas [attr.id]="'myChart_' + (xx.id - 1)" class="chartback" height="100px" ></canvas>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+
+
+
+<app-footer></app-footer>

@@ -1,0 +1,40 @@
+#adHead1{
+  width: 25%;
+  border: 0px solid white ;
+  text-transform: capitalize;
+    font-size: 15px
+}
+#adHead2{
+  width: 60%;
+  border: 0px solid white ;    
+  text-transform: capitalize;
+    
+    font-size: 15px
+}
+#adHead3{
+  width: 15%;
+  border: 0px solid white ;
+    
+    font-size: 15px
+}
+#hidden{
+  height: 0px;
+  padding: 0;
+}
+#searchbar{
+    z-index: auto;
+}
+#imaginary_container{
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
