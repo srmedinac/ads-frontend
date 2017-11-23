@@ -20,6 +20,8 @@ import { EdErAdComponent } from './ed-er-ad/ed-er-ad.component';
 import { ListAdComponent } from './list-ad/list-ad.component';
 import { AdvertisementComponent } from './advertisement/advertisement.component';
 import { DelAdComponent } from './del-ad/del-ad.component';
+import { vcRecaptcha } from 'angular-recaptcha';
+import { ReCaptchaModule } from 'angular2-recaptcha';
 import * as $ from 'jquery';
 import mdl from 'material-design-lite';
 
@@ -72,7 +74,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ReCaptchaModule
   ],
   providers: [CreateAdService,
               ListAdsService,

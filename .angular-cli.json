@@ -38,6 +38,8 @@
         "../node_modules/angular-aria/angular-aria.js",
         "../node_modules/angular-animate/angular-animate.js",
         "../node_modules/jquery.simple-text-rotator/jquery.simple-text-rotator.js",
+        "../node_modules/angular-recaptcha/release/angular-recaptcha.min.js",
+        "../node_modules/angular2-recaptcha/angular2-recaptcha.js",
         "scripts.js"
       ],
       "environmentSource": "environments/environment.ts",
